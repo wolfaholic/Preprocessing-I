@@ -140,7 +140,7 @@ body {
 }
 .flex-column {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
 }
 .box-shadow {
   box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
@@ -158,7 +158,7 @@ body {
 .wrapper {
   width: 1040px;
   margin: 50px auto;
-  background-color: #dddddd;
+  background-color: #FBF9F7;
 }
 .wrapper header {
   display: flex;
@@ -166,7 +166,7 @@ body {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 15px;
   background-color: #2EA6E0;
   box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
 }
@@ -183,7 +183,7 @@ body {
   text-decoration: none;
   color: #FBF9F7;
   font-size: 1.5rem;
-  padding: 10px;
+  padding: 5px;
 }
 .wrapper header a:hover {
   color: #2E60CE;
@@ -197,45 +197,44 @@ body {
   background-color: #FBF9F7;
   border-radius: 35%;
 }
-.wrapper header .portfolio-img {
-  margin-left: 30px;
-  width: 15%;
-  height: 10%;
-  border-radius: 50%;
-  border: 5px solid #FBF9F7;
-  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
-}
 .wrapper .introduction {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0 auto;
+  margin: 20 0;
   padding: 10px;
 }
-.wrapper .introduction h1 {
+.wrapper .introduction .intro-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 50%;
+}
+.wrapper .introduction .intro-content h1 {
   font-size: 4rem;
   color: #2E60CE;
   font-family: "satisfy";
   text-shadow: 2px 2px 4px #000000;
 }
-.wrapper .introduction h2 {
+.wrapper .introduction .intro-content h2 {
   font-family: "lato";
   font-size: 1.5rem;
   margin: 20 10;
   font-weight: bold;
+  margin: 0 auto;
+  padding-top: 10px;
 }
-.wrapper .introduction p {
+.wrapper .introduction .intro-content p {
   font-family: "montserrat";
   font-size: 1rem;
-  margin: 20 10;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 10px 0px;
 }
-.wrapper .introduction button {
-  align-self: center;
-  align-items: center;
-  padding: 5px;
-  width: 20%;
+.wrapper .introduction .intro-content button {
+  margin: 0 auto;
+  padding: 10px;
+  width: 30%;
   border-radius: 25%;
   border-color: #9DC1E0;
   background-color: #2EA6E0;
@@ -243,6 +242,16 @@ body {
   font-weight: bold;
   font-family: "lato";
   font-size: 1.3em;
+  align-self: center;
+}
+.wrapper .introduction .portfolio-img {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 40%;
+  height: 10%;
+  border-radius: 50%;
+  border: 5px solid #2EA6E0;
+  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
 }
 .wrapper .qualifications {
   display: flex;
@@ -256,7 +265,7 @@ body {
 }
 .wrapper .qualifications .qual-content {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
 }
 .wrapper .qualifications h2 {
   font-family: "lato";
@@ -279,17 +288,50 @@ body {
   width: 100%;
   border: 5px solid #2EA6E0;
 }
-.wrapper table {
+.wrapper .skills table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-.wrapper td,
-.wrapper th {
+.wrapper .skills table th {
+  font-weight: bold;
+  font-family: roboto;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 5px solid #2EA6E0;
+  color: #FBF9F7;
+  background-color: #2EA6E0;
+}
+.wrapper .skills table td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  border-bottom: 2px solid #2EA6E0;
 }
-.wrapper tr:nth-child(even) {
+.wrapper .skills table tr:nth-child(even) {
   background-color: #dddddd;
+}
+.wrapper footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+.wrapper footer nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.wrapper footer nav a {
+  margin: 10px 0px;
+  font-family: lato;
+  text-decoration: none;
+  color: #9DC1E0;
+  font-size: 1rem;
+}
+.wrapper .copyright {
+  align-content: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  color: #2E60CE;
 }
