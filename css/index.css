@@ -134,6 +134,25 @@ html,
 body {
   height: 100%;
 }
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.box-shadow {
+  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
+}
+.font-decor-p {
+  font-family: "montserrat";
+  font-size: 1rem;
+}
+.font-decor-h2 {
+  font-family: "lato";
+  font-size: 1.5rem;
+}
 .wrapper {
   width: 1040px;
   margin: 50px auto;
@@ -141,42 +160,84 @@ body {
 .wrapper header {
   display: flex;
   flex-flow: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
-  padding: 1.5%;
-  background-color: #8F60FB;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #2EA6E0;
+  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
 }
 .wrapper header nav {
   text-decoration: none;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .wrapper header a {
   margin: 0 auto;
   font-family: lobster;
   text-decoration: none;
-  color: #fff;
+  color: #FBF9F7;
   font-size: 1.5rem;
-  padding: 5%;
+  padding: 10px;
 }
 .wrapper header a:hover {
-  color: #418cfe;
-  border: 3px solid white;
-  background-color: white;
+  color: #2E60CE;
+  border: 3px solid #FBF9F7;
+  background-color: #FBF9F7;
+  border-radius: 35%;
+}
+.wrapper header a:active {
+  color: #2E60CE;
+  border: 3px solid #FBF9F7;
+  background-color: #FBF9F7;
   border-radius: 35%;
 }
 .wrapper header .portfolio-img {
+  margin-left: 30px;
   width: 15%;
   height: 10%;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #FBF9F7;
+  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
 }
-.wrapper .main-heading {
-  width: 100%;
+.wrapper .introduction {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
 }
-.wrapper .main-heading h1 {
-  font-size: 2rem;
-  font-family: satisfy;
+.wrapper .introduction h1 {
+  font-size: 4rem;
+  color: #2E60CE;
+  font-family: "satisfy";
+  text-shadow: 2px 2px 4px #000000;
+}
+.wrapper .introduction h2 {
+  font-family: "lato";
+  font-size: 1.5rem;
+  margin: 20 10;
+  font-weight: bold;
+}
+.wrapper .introduction p {
+  font-family: "montserrat";
+  font-size: 1rem;
+  margin: 20 10;
+  padding: 10px;
+}
+.wrapper .introduction button {
+  align-self: center;
+  align-items: center;
+  padding: 5px;
+  width: 20%;
+  border-radius: 25%;
+  border-color: #9DC1E0;
+  background-color: #2EA6E0;
+  color: #FBF9F7;
+  font-weight: bold;
+  font-family: "lato";
+  font-size: 1.3em;
 }

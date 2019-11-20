@@ -57,65 +57,154 @@ html, body {
 	height: 100%;
 ;
 }
-@colorpurple: #7A41FE;
-@colorlightpurple: #8F60FB;
-@colorwhite: #fff; 
+
+
+// variables
+
+//colors
+
+@first-color: #FBF9F7; //Light Shades - Spring Wood
+@second-color: #9DC1E0; //Light Accent - Pigeon Post
+@third-color: #2EA6E0; //Main Brand Color - Curious Blue
+@fourth-color: #72AEE5; //Dark Accent - Viking
+@fifth-color: #2E60CE; //Dark Shades - Mariner 
+
+//font
+@primary-font: "lato";
+@secondary-font: "satisfy";
+@tertiary-font: "montserrat";
+
+// mixins
+.flex-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.flex-column {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.box-shadow {
+	box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
+}
+
+.font-decor-p {
+	font-family: @tertiary-font;
+	font-size: 1rem;
+}
+
+.font-decor-h2 {
+	font-family: @primary-font;
+	font-size: 1.5rem;
+}
+
+// Operations
+
+
+// Wrapper
 
 .wrapper {
 	width: 1040px;
 	margin: 50px auto;
 
-	header {
-		display: flex;
-		flex-flow: row-reverse;
-		justify-content: space-evenly;
-		width: 100%;
-		padding: 1.5%;
-		background-color: @colorlightpurple;
-		
-		nav {
-			text-decoration: none;
-			display: flex;
-			flex-flow: row nowrap;
-			justify-content: space-between;
-			align-items: center;
+header {
+	display: flex;
+	flex-flow: row-reverse;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: @third-color;
+	box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
+	
+	nav {
+		text-decoration: none;
+		.flex-row();
+		justify-content: space-between;
+		align-items: flex-start;
+		 
+	}
+
+	a {
+		margin: 0 auto;
+		font-family: lobster;
+		text-decoration: none;
+		color: @first-color;
+		font-size: 1.5rem;
+		padding: 10px;
+
+		&:hover  {
+			color: @fifth-color;
+			border: 3px solid @first-color;
+			background-color: @first-color;
+			border-radius: 35%;
 		}
 
-		a {
-			margin: 0 auto;
-			font-family: lobster;
-			text-decoration: none;
-			color: @colorwhite;
-			font-size: 1.5rem;
-			padding: 5%;
-			
-			&:hover {
-				color: #418cfe;
-				border: 3px solid white;
-				background-color: white;
-				border-radius: 35%;
-				
+		&:active  {
+			color: @fifth-color;
+			border: 3px solid @first-color;
+			background-color: @first-color;
+			border-radius: 35%;
+		}	
+	}
+	
+	.portfolio-img {
+		margin-left: 30px;
+		width: 15%;
+		height: 10%;
+		border-radius: 50%;
+		border: 5px solid @first-color;
+		.box-shadow();
+	}
+	
+}
 
-			}
-		}
-		
-		.portfolio-img {
-			width: 15%;
-			height: 10%;
-			border-radius: 50%;
-			border: 5px solid @colorwhite;
-		}
+.introduction {
+	.flex-column();
+	justify-content: space-evenly;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+
+	h1 {
+		font-size: 4rem;
+		color: @fifth-color;
+		font-family: @secondary-font;
+		text-shadow: 2px 2px 4px #000000;
 		
 	}
 
-	.main-heading {
-		width: 100%;
-		h1 {
-			font-size: 2rem;
-			font-family: satisfy;
-		}
-
+	h2 {
+		.font-decor-h2;
+		margin: 20 10;
+		font-weight: bold;
 	}
+	
+
+	p {
+		.font-decor-p();
+		margin: 20 10;
+		padding: 10px;
+	}
+
+	button {
+		align-self: center;
+		align-items: center;
+		padding: 5px;
+		width: 20%;
+		border-radius: 25%;
+		border-color: @second-color;
+		background-color: @third-color;
+		color: @first-color;
+		font-weight: bold;
+		font-family: @primary-font;
+		font-size: 1.3em;
+	}
+
+}
+
+
 
 
 }
