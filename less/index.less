@@ -59,31 +59,63 @@ html, body {
 }
 @colorpurple: #7A41FE;
 @colorlightpurple: #8F60FB;
-@colorwhite: #fff;
+@colorwhite: #fff; 
 
 .wrapper {
-	width: 800px;
+	width: 1040px;
 	margin: 50px auto;
 
 	header {
 		display: flex;
+		flex-flow: row-reverse;
+		justify-content: space-evenly;
 		width: 100%;
+		padding: 1.5%;
+		background-color: @colorlightpurple;
 		
 		nav {
 			text-decoration: none;
 			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			justify-content: flex-end;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		a {
+			margin: 0 auto;
+			font-family: lobster;
+			text-decoration: none;
+			color: @colorwhite;
+			font-size: 1.5rem;
+			padding: 5%;
+			
+			&:hover {
+				color: #418cfe;
+				border: 3px solid white;
+				background-color: white;
+				border-radius: 35%;
+				
+
+			}
 		}
 		
 		.portfolio-img {
 			width: 15%;
 			height: 10%;
+			border-radius: 50%;
+			border: 5px solid @colorwhite;
 		}
-	
+		
 	}
 
+	.main-heading {
+		width: 100%;
+		h1 {
+			font-size: 2rem;
+			font-family: satisfy;
+		}
+
+	}
 
 
 }
