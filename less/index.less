@@ -82,7 +82,7 @@ html, body {
 
 .flex-column {
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: column wrap;
 }
 
 .box-shadow {
@@ -97,6 +97,8 @@ html, body {
 .font-decor-h2 {
 	font-family: @primary-font;
 	font-size: 1.5rem;
+	margin: 20 10;
+	font-weight: bold;
 }
 
 // Operations
@@ -163,7 +165,7 @@ header {
 .introduction {
 	.flex-column();
 	justify-content: space-evenly;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 10px;
 
@@ -177,8 +179,6 @@ header {
 
 	h2 {
 		.font-decor-h2;
-		margin: 20 10;
-		font-weight: bold;
 	}
 	
 
@@ -204,10 +204,58 @@ header {
 
 }
 
+.qualifications {
+	.flex-row();
+	justify-content: space-evenly;
+	width: 100%;
+	margin: 0 auto;
+	background-color: @fifth-color;
+	.box-shadow();
+	padding: 2%;
+	
+	 .qual-content {
+		 .flex-column();
+	 }
 
+	h2 {
+		.font-decor-h2;
+		padding: 20px 10px;
+		color: @first-color;
+	}
 
-
+	p {
+		.font-decor-p();
+		width: 95%;
+		margin: 10px 5px;
+		padding: 5px;
+		color: @first-color;
+	}
 }
+
+.skills {
+	background-color: @first-color;
+	width: 100%;
+	border: 5px solid #2EA6E0;
 
 
  
+
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }background-color: #dddddd;
+  }
+
