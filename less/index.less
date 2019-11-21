@@ -92,6 +92,7 @@ html, body {
 .font-decor-p {
 	font-family: @tertiary-font;
 	font-size: 1rem;
+	color: @second-color;
 }
 
 .font-decor-h2 {
@@ -101,10 +102,14 @@ html, body {
 	font-weight: bold;
 }
 
-// Operations
-
-
 // Wrapper
+
+body {
+	@media (max-width:600px) {
+		width: 100%;4
+		background-color: @fifth-color;
+	}
+}
 
 .wrapper {
 	width: 1040px;
@@ -154,7 +159,7 @@ html, body {
 		} // header links
 		
 		@media (max-width: 500px) {
-			background-color: @secondary-color;
+			background-color: @second-color;
 
 
 			 nav {
@@ -170,7 +175,6 @@ html, body {
 		.flex-row();
 		justify-content: space-evenly;
 		width: 100%;
-		margin: 20 0;
 		padding: 10px;
 
 		.intro-content {
