@@ -143,7 +143,7 @@ body {
   flex-flow: column;
 }
 .box-shadow {
-  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .font-decor-p {
   font-family: "montserrat";
@@ -168,7 +168,7 @@ body {
   margin-bottom: 20px;
   padding: 15px;
   background-color: #2EA6E0;
-  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .wrapper header nav {
   text-decoration: none;
@@ -210,12 +210,14 @@ body {
   flex-flow: column;
   justify-content: center;
   width: 50%;
+  margin: 0 auto;
 }
 .wrapper .introduction .intro-content h1 {
   font-size: 4rem;
   color: #2E60CE;
   font-family: "satisfy";
   text-shadow: 2px 2px 4px #000000;
+  margin: 0 auto;
 }
 .wrapper .introduction .intro-content h2 {
   font-family: "lato";
@@ -232,17 +234,18 @@ body {
   padding: 10px 0px;
 }
 .wrapper .introduction .intro-content button {
-  margin: 0 auto;
-  padding: 10px;
-  width: 30%;
-  border-radius: 25%;
-  border-color: #9DC1E0;
   background-color: #2EA6E0;
+  border: none;
   color: #FBF9F7;
-  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
   font-family: "lato";
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
   font-size: 1.3em;
-  align-self: center;
+  width: 25%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .wrapper .introduction .portfolio-img {
   margin-left: 30px;
@@ -251,7 +254,7 @@ body {
   height: 10%;
   border-radius: 50%;
   border: 5px solid #2EA6E0;
-  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .wrapper .qualifications {
   display: flex;
@@ -260,12 +263,13 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #2E60CE;
-  box-shadow: 2px 2px rgba(139, 138, 138, 0.527);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2%;
 }
 .wrapper .qualifications .qual-content {
   display: flex;
   flex-flow: column;
+  justify-content: center;
 }
 .wrapper .qualifications h2 {
   font-family: "lato";
@@ -309,6 +313,36 @@ body {
   border-bottom: 2px solid #2EA6E0;
 }
 .wrapper .skills table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.wrapper .work-history-table {
+  background-color: #FBF9F7;
+  width: 100%;
+  border: 5px solid #2EA6E0;
+  margin: 30px 0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wrapper .work-history-table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.wrapper .work-history-table table th {
+  font-weight: bold;
+  font-family: roboto;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 5px solid #2EA6E0;
+  color: #FBF9F7;
+  background-color: #2EA6E0;
+}
+.wrapper .work-history-table table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 2px solid #2EA6E0;
+}
+.wrapper .work-history-table table tr:nth-child(even) {
   background-color: #dddddd;
 }
 .wrapper footer {
