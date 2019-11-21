@@ -1,1 +1,388 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column;
+}
+.box-shadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.font-decor-p {
+  font-family: "montserrat";
+  font-size: 1rem;
+  color: #9DC1E0;
+}
+.font-decor-h2 {
+  font-family: "lato";
+  font-size: 1.5rem;
+  margin: 20 10;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    4background-color: #2E60CE;
+  }
+}
+.wrapper {
+  width: 1040px;
+  margin: 50px auto;
+  background-color: #FBF9F7;
+}
+.wrapper header {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #2EA6E0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wrapper header nav {
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.wrapper header a {
+  margin: 0 auto;
+  font-family: lobster;
+  text-decoration: none;
+  color: #FBF9F7;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.wrapper header a:hover {
+  color: #2E60CE;
+  border: 3px solid #FBF9F7;
+  background-color: #FBF9F7;
+  border-radius: 35%;
+}
+.wrapper header a:active {
+  color: #2E60CE;
+  border: 3px solid #FBF9F7;
+  background-color: #FBF9F7;
+  border-radius: 35%;
+}
+@media (max-width: 500px) {
+  .wrapper header {
+    background-color: #9DC1E0;
+  }
+  .wrapper header nav {
+    display: flex;
+    flex-flow: column;
+  }
+}
+.wrapper .introduction {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper .introduction .intro-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.wrapper .introduction .intro-content h1 {
+  font-size: 4rem;
+  color: #2E60CE;
+  font-family: "satisfy";
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0 auto;
+}
+.wrapper .introduction .intro-content h2 {
+  font-family: "lato";
+  font-size: 1.5rem;
+  margin: 20 10;
+  font-weight: bold;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.wrapper .introduction .intro-content p {
+  font-family: "montserrat";
+  font-size: 1rem;
+  color: #9DC1E0;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.wrapper .introduction .intro-content button {
+  background-color: #2EA6E0;
+  border: none;
+  color: #FBF9F7;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: "lato";
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3em;
+  width: 25%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wrapper .introduction .portfolio-img {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 40%;
+  height: 10%;
+  border-radius: 50%;
+  border: 5px solid #2EA6E0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wrapper .qualifications {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #2E60CE;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2%;
+}
+.wrapper .qualifications .qual-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.wrapper .qualifications h2 {
+  font-family: "lato";
+  font-size: 1.5rem;
+  margin: 20 10;
+  font-weight: bold;
+  padding: 20px 10px;
+  color: #FBF9F7;
+}
+.wrapper .qualifications p {
+  font-family: "montserrat";
+  font-size: 1rem;
+  color: #9DC1E0;
+  width: 95%;
+  margin: 10px 5px;
+  padding: 5px;
+  color: #FBF9F7;
+}
+.wrapper .skills {
+  background-color: #FBF9F7;
+  width: 100%;
+  border: 5px solid #2EA6E0;
+}
+.wrapper .skills table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.wrapper .skills table th {
+  font-weight: bold;
+  font-family: roboto;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 5px solid #2EA6E0;
+  color: #FBF9F7;
+  background-color: #2EA6E0;
+}
+.wrapper .skills table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 2px solid #2EA6E0;
+}
+.wrapper .skills table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.wrapper .work-history-table {
+  background-color: #FBF9F7;
+  width: 100%;
+  border: 5px solid #2EA6E0;
+  margin: 30px 0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wrapper .work-history-table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.wrapper .work-history-table table th {
+  font-weight: bold;
+  font-family: roboto;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 5px solid #2EA6E0;
+  color: #FBF9F7;
+  background-color: #2EA6E0;
+}
+.wrapper .work-history-table table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 2px solid #2EA6E0;
+}
+.wrapper .work-history-table table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.wrapper footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+.wrapper footer nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.wrapper footer nav a {
+  margin: 10px 0px;
+  font-family: lato;
+  text-decoration: none;
+  color: #9DC1E0;
+  font-size: 1rem;
+}
+.wrapper .copyright {
+  align-content: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  color: #2E60CE;
+}
