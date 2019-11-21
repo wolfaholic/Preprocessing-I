@@ -197,6 +197,12 @@ body {
   background-color: #FBF9F7;
   border-radius: 35%;
 }
+@media (max-width: 500px) {
+  .wrapper header nav {
+    display: flex;
+    flex-flow: column;
+  }
+}
 .wrapper .introduction {
   display: flex;
   flex-flow: row nowrap;

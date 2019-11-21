@@ -111,6 +111,7 @@ html, body {
 	margin: 50px auto;
 	background-color: @first-color;
 
+
 	header {
 		display: flex;
 		flex-flow: row-reverse;
@@ -120,7 +121,7 @@ html, body {
 		padding: 15px;
 		background-color: @third-color;
 		.box-shadow();
-		
+
 		nav {
 			text-decoration: none;
 			.flex-row();
@@ -152,7 +153,16 @@ html, body {
 			}	
 		} // header links
 		
-		
+		@media (max-width: 500px) {
+			background-color: @secondary-color;
+
+
+			 nav {
+				 .flex-column();
+				
+
+			 }
+		}
 		
 	}  // header
 
@@ -312,7 +322,6 @@ html, body {
 				text-align: left;
 				padding: 8px;
 				border-bottom: 2px solid @third-color;
-				
 			}
 			
 			tr:nth-child(even) {
@@ -350,4 +359,3 @@ html, body {
 	} //copyright
 
   } //wrapper
-
